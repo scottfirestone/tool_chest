@@ -1,0 +1,4 @@
+<%= @tool.name %> - <%= @tool.id %> - <%= @tool.price %><br>
+<%= link_to "Back", tools_path %>
+<%= link_to "Update", edit_tool_path %>
+<%= link_to "Annihilate #{@tool.name}", tool_path(@tool.id), method: 'delete' %>
